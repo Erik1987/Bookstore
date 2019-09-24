@@ -21,6 +21,7 @@
 			<input type="text" id="isbn" th:field="*{isbn}" />
 			<label for="price">Price</label>
 			<input type="text" id="price" th:field="*{price}" />
+<<<<<<< HEAD
 			
 			<div style="clear: both; display: block; height: 10px;"></div>						
 		  	<label for="categorylist">Category</label>
@@ -28,6 +29,8 @@
        			<option th:each="category: ${categories}" th:value="${category.categoryid}" th:text="${category.name}"></option>
     		</select>
 			
+=======
+>>>>>>> 2b38575182241b564768bcddfa4da17135ed6a81
 			<div style="clear: both; display: block; height: 10px;"></div>
 			<input type="submit" value="Save"></input>
 		</form>

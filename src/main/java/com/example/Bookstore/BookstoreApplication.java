@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Bean;
 
 import com.example.Bookstore.domain.Book;
 import com.example.Bookstore.domain.BookRepository;
+<<<<<<< HEAD
 import com.example.Bookstore.domain.Category;
 import com.example.Bookstore.domain.CategoryRepository;
 
@@ -16,6 +17,10 @@ import com.example.Bookstore.domain.CategoryRepository;
 // git add .
 // git commit -m "adding more junk"
 // git push -u origin master
+=======
+
+
+>>>>>>> 2b38575182241b564768bcddfa4da17135ed6a81
 
 
 @SpringBootApplication
@@ -27,6 +32,7 @@ public class BookstoreApplication {
 		SpringApplication.run(BookstoreApplication.class, args);
 	}
 	@Bean
+<<<<<<< HEAD
 	public CommandLineRunner BookstoreDemo(BookRepository repository, CategoryRepository crepository) {
 		return (args) -> {
 			log.info("save a couple of books");
@@ -39,6 +45,13 @@ public class BookstoreApplication {
 			
 			repository.save(new Book("Java Ohjelmointi - Perusteet", "Matti Ohjelmoinen", 2019, "1212-1212", 29.39, crepository.findByName("Education").get(0)));
 			repository.save(new Book("Spring Thymeleaf - Perusteet", "Huono Opettaja", 2018, "3453-4565", 89.39, crepository.findByName("Education").get(0)));	
+=======
+	public CommandLineRunner BookstoreDemo(BookRepository repository) {
+		return (args) -> {
+			log.info("save a couple of books");
+			repository.save(new Book("Java Ohjelmointi - Perusteet", "Matti Ohjelmoinen", 2019, "1212-1212", 29.39));
+			repository.save(new Book("Spring Thymeleaf - Perusteet", "Huono Opettaja", 2018, "3453-4565", 89.39));	
+>>>>>>> 2b38575182241b564768bcddfa4da17135ed6a81
 			
 			log.info("fetch all Books");
 			for (Book book : repository.findAll()) {
