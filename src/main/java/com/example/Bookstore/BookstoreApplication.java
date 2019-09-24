@@ -12,6 +12,7 @@ import com.example.Bookstore.domain.BookRepository;
 import com.example.Bookstore.domain.Category;
 import com.example.Bookstore.domain.CategoryRepository;
 
+//näin lisätään githubiin
 // git add .
 // git commit -m "adding more junk"
 // git push -u origin master
